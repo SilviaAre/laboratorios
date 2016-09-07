@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>Ejercicios Prácticos</title>
+	<link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<nav>		
+		<ul>
+			<li><a href="#"><h2>Ejercicios Prácticos</h2></a></li>
+		</ul>
+	</nav>
+<body>
+<main>
+	<section>
+		<br>
+		<br>
+		<h2>Calculadora de divisas</h2>
+		<h3>Convertir dólares-córdobas y córdobas.dólares</h3>
+		<form method="post" action="php/calcular.php">
+			Ingrese el monto: <input type="text" name="monto">
+			<select name="lista">
+			   <option value="1">Dólares</option> 
+			   <option value="2">Córdobas</option> 
+			</select><br><br>
+			<input type="submit" name="Convertir" id="bt">
+		</form>
+	</section>
+	<section>
+	<br>
+	<br>
+		<h2>Calcular Indice de Masa Corporal</h2>
+		<h3>El IMC permite determinar si tu peso es correcto.</h3>
+		<form method="post" action="php/imc.php">
+			Ingrese su peso (Kg): <input type="text" name="peso"><br>
+			Ingrese se altura (mt): <input type="text" name="alt"><br><br>
+			<input type="submit" name="Calcular" id="bt">
+		</form>
+	</section>
+	<br>
+	<section>
+	<h2>Calcular Salario</h2>
+	<h3>Puedes calcular tu sueldo neto</h3>
+		<form method="post" action="php/salario.php">
+			Ingrese su pago por hora: <input type="text" name="ph"><br>
+			Ingrese horas trabajadas: <input type="text" name="ht"><br><br>
+			<input type="submit" name="Calcular" id="bt">
+		</form>
+	</section>
+	<section>
+	<h2>Calcular Distancias</h2>
+	<h3>Realiza las conversiones entre las distintas medidas</h3>
+		<form method="post" action="php/distancia.php">
+			Ingrese Medida: <input type="text" name="medida">
+			<input type="radio" name="op" value="cm" checked="">cm
+			<input type="radio" name="op" value="pul" >pul
+			<input type="radio" name="op" value="m" >m
+			<input type="radio" name="op" value="km" >km <br>
+				<form method="post" action="php/distancia.php">
+				<strong>Convertir a: </strong> 
+				<input type="checkbox" name="conv" value="cm" checked="">cm
+				<input type="checkbox" name="conv" value="pul" >pul
+				<input type="checkbox" name="conv" value="m" >m
+				<input type="checkbox" name="conv" value="km" >km<br><br>
+				<input type="submit" name="Enviar" id="bt">
+				</form>
+		</form>
+	</section>
+</main>
+	<footer>
+		<h4>Silvia Arellano &copy 2016</h4>
+	</footer>
+</body>
+</html>
